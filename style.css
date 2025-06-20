@@ -1,0 +1,36 @@
+/* Additional modern styles */
+.hero.modern-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1573164574472-cb89e39749b4?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  height: 450px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #ffb300;
+  color: #1a237e;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ffa000;
+}

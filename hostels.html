@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hostels | StuHub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .hostel-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .hostel {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+    }
+
+    .hostel h3 {
+      margin-top: 0;
+    }
+
+    .hostel p {
+      margin: 0.5rem 0;
+    }
+
+    .buttons {
+      margin-top: 1rem;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 0.5rem 1rem;
+      background-color: #1a237e;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StuHub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="hostel.html">Add Hostel</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Available Hostel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hostel Dashboard | StuHub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .dashboard-header button {
+      background-color: #1a237e;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #e3e7ee;
+    }
+
+    td a {
+      text-decoration: none;
+      color: #1a237e;
+    }
+
+    .actions button {
+      background-color: #1a237e;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      margin-right: 5px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      background-color: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>StuHub Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="hostel.html">Add Hostel</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="dashboard-header">
+      <h2>Registered Hostels</h2>
+      <button onclick="window.location.href='hostel.html'">+ Add Hostel</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Hostel Name</th>
+          <th>Location</th>
+          <th>Price</th>
+          <th>Owner</th>
+          <th>Phone</th>
+          <th>Map</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="hostelTable">
+  <!-- Filled by JavaScript -->
+</tbody>
+
+        <tr>
+          <td>Victory Hostel</td>
+          <td>Amamoma</td>
+          <td>GHS 2,500</td>
+          <td>Kwaku Mensah</td>
+          <td>0241234567</td>
+          <td><a href="https://goo.gl/maps/abcd1234" target="_blank">View</a></td>
+          <td class="actions">
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Prestige Lodge</td>
+          <td>Apewosika</td>
+          <td>GHS 2,800</td>
+          <td>Akua Badu</td>
+          <td>0209876543</td>
+          <td><a href="https://goo.gl/maps/wxyz5678" target="_blank">View</a></td>
+          <td class="actions">
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    &copy; 2025 StuHub. All rights reserved.
+  </footer>
+<script>
+  fetch('https://sheetdb.io/api/v1/https://sheetdb.io/api/v1/n6owylzbiz8ce') //
+    .then(res => res.json())
+    .then(data => {
+      const table = document.getElementById("hostelTable");
+      data.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${row.name}</td>
+          <td>${row.location}</td>
+          <td>${row.price}</td>
+          <td>${row.owner}</td>
+          <td>${row.phone}</td>
+          <td><a href="${row.mapLink}" target="_blank">View</a></td>
+          <td class="actions">
+            <button disabled>Edit</button>
+            <button disabled>Delete</button>
+          </td>
+        `;
+        table.appendChild(tr);
+      });
+    });
+</script>
+
+</body>
+</html>
